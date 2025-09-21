@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  /* добавляем flexbox для прилипания футера */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: darkblue;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  background-color: lightblue;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: darkblue;
+  font-weight: bold;
+}
+
+nav a.active {
+  background-color: darkblue;
+  color: white;
+  border-radius: 4px;
+}
+
+.container {
+  display: flex;
+  margin: 20px;
+
+  /* чтобы контейнер растягивался и футер был внизу */
+  flex: 1;
+}
+
+.menu {
+  width: 200px;
+  background-color: #f2f2f2;
+  padding: 15px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+}
+
+.aside {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+footer {
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  padding: 10px;
+
+  /* фиксируем футер снизу */
+  margin-top: auto;
+}
+
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f0f0f0, #e0e0e0);
+    color: #333;
+}
+
+/* Шапка */
+header {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    font-family: 'Merriweather', serif;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header h2 {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+/* Контент */
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.content h3 {
+    margin-top: 20px;
+    color: #444;
+}
+
+.content p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Списки */
+ol, ul {
+    margin-left: 30px;
+    padding: 10px;
+}
+
+ol li, ul li {
+    margin-bottom: 8px;
+}
+
+/* Изображение */
+.content img {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Ссылки и кнопка */
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.links a {
+    margin: 10px;
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d62828;
+    color: #fff !important;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a4161a;
+}
+.portrait {
+  display: block;
+  margin: 20px auto;
+  max-width: 40%;   /* компактное фото */
+  height: auto;     
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+  border: 2px solid #fff;
+}
+
+/* ====== TABLE ====== */
+table.grades {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table.grades th {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+table.grades td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+table.grades tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table.grades .highlight-row {
+  background-color: #d4d4d4;
+  font-weight: bold;
+}
+
+/* ====== FORM ====== */
+form.feedback {
+  max-width: 500px;
+  margin: 20px auto;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form.feedback label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form.feedback input,
+form.feedback select,
+form.feedback textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+form.feedback input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+form.feedback button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #d62828;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form.feedback button:hover {
+  background-color: #a4161a;
+}

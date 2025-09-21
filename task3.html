@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 3 - Table & Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    Task 3 - Table & Form
+  </header>
+
+  <nav>
+    <a href="task1.html">task 1</a>
+    <a href="task2.html">task 2</a>
+    <a href="task3.html" class="active">task 3</a>
+    <a href="task4.html">task 4</a>
+  </nav>
+
+  <div class="container">
+    <!-- Левое меню -->
+    <div class="menu">
+      <h3>Menu</h3>
+      <ul>
+        <li><a href="#table">Student Grades</a></li>
+        <li><a href="#form">Feedback Form</a></li>
+      </ul>
+    </div>
+
+    <!-- Контент -->
+    <div class="aside">
+      <h2 id="table">Student Grades Table</h2>
+      <table class="grades">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Eroha</td>
+            <td>Math</td>
+            <td>A+</td>
+          </tr>
+          <tr>
+            <td>C++</td>
+            <td>B+</td>
+          </tr>
+          <tr class="highlight-row">
+            <td>Alikhan</td>
+            <td>Programming</td>
+            <td>A+</td>
+          </tr>
+          <tr>
+            <td>Madi</td>
+            <td>English</td>
+            <td>A+</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="form">Feedback Form</h2>
+      <form class="feedback">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="role">Role:</label>
+        <select id="role" name="role">
+          <option>Student</option>
+          <option>Teacher</option>
+          <option>Other</option>
+        </select>
+
+        <p>Do you like this website?</p>
+        <label><input type="radio" name="like" value="yes"> Yes</label>
+        <label><input type="radio" name="like" value="no"> No</label>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 My Website | All rights reserved
+  </footer>
+
+</body>
+</html>
